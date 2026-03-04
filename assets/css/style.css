@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px; 
+    background-color: #ffefdb;
+    overflow: hidden;
+}
+
+.navlink{
+    display: flex;
+    list-style-type: none;
+}
+
+.navlink li {
+    color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navlink li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+}
+
+.navlink li a:hover{
+    color: #5D4037;
+    font-size: 20px;
+}
+.navtitle{
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+    width: 100px; 
+    height: auto;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0px;
+}
+
+.title{
+	color: #5D4037;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Pacifico', cursive;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    padding: 3px;
+    background-color: #5D4037;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px;
+}
+
+.hero {
+    margin: 10px;
+    text-align: center;
+    color: #5D4037;
+    padding: 20px;
+    border: hsl(14, 26%, 29%) solid 2px;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+    margin: 10px;
+    border: hsl(14, 26%, 29%) solid 2px;
+}
+.content h1 {
+    color: #5D4037;
+    text-align: center;
+}
+th{
+	padding: 10px;
+	background-color: #ffbb33;
+	border: 1px solid #5f4b3a;
+}
+td{
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #5f4b3a;
+}
+tr{
+	background-color: #f2e2d2;
+}
+table{
+	border-collapse: collapse;
+}
+
+td img{
+	width: 100px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.table-section{
+    margin: 10px;
+    padding: 20px;
+    border: hsl(14, 26%, 29%) solid 2px;
+    color: #5D4037;
+    text-align: center;
+}
+
+.about-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.about-photos img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+}
+
+
+.about-photos img:hover {
+    transform: scale(1.1); 
+}
+
+.contact-section{
+    margin: 10px;
+    padding: 20px;
+    border: hsl(14, 26%, 29%) solid 2px;
+    color: #5D4037;
+}
+
+.contact {
+    position: relative; 
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('../../images/contact.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; 
+    z-index: -1; 
+}
+
+.contact-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 20px;
+    max-width: 800px; 
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+:root {
+    --primary-color: #c78c64; /* Button and highlight color */
+    --card-bg: #fdf8f5;
+    --text-dark: #2c3e50;
+    --input-border: #eee;
+}
+
+.contact-details {
+    padding: 50px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+}
+
+.main-contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Info Cards Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.info-card {
+    background-color: var(--card-bg);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease; /* Animation Speed */
+    border: 1px solid transparent;
+}
+
+/* Animation: Hover Effect */
+.info-card:hover {
+    transform: translateY(-8px); /* Card එක උඩට ඉස්සෙනවා */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: var(--primary-color);
+}
+
+.icon-box {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.info-card h4 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.full-width-card {
+    grid-column: span 2;
+}
+
+/* Map Container */
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Form Styling */
+.contact-form-side h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.send-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.send-btn:hover {
+    background-color: #b07a55;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .main-contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.opening-hours {
+    padding: 50px 0;
+    background-color: #fdf8f5; /* ඉතා ලා ක්‍රීම් පාටක් */
+    display: flex;
+    justify-content: center;
+}
+
+.hours-card {
+    background: #fff;
+    border: 2px solid #5d4037; /* Chocolate Brown border */
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 10px 10px 0px #d7ccc8; /* පසුපසට පෙනෙන ලස්සන shadow එකක් */
+}
+
+.hours-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hours-header .icon {
+    font-size: 3rem;
+}
+
+.hours-header h2 {
+    color: #5d4037;
+    font-family: 'Playfair Display', serif; /* මේ font එක නැත්නම් normal serif පාවිච්චි වේවි */
+    margin: 10px 0;
+}
+
+.timetable {
+    margin-bottom: 25px;
+}
+
+.time-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #4e342e;
+}
+
+.divider {
+    flex-grow: 1;
+    border-bottom: 2px dotted #d7ccc8; /* දවස සහ වෙලාව මැද තිත් ඉරක් */
+    margin: 0 15px;
+}
+
+.day {
+    font-weight: 700;
+}
+
+.sunday {
+    color: #a1887f; /* ඉරිදා දවස වෙනස් පාටකින් */
+}
+
+.hours-footer {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #795548;
+}
